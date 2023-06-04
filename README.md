@@ -1,4 +1,10 @@
-# create-svelte
+# Farm Central Stock management Website
+
+Farm Central is a software tool or platform designed to facilitate
+the management of Farmers and their associated products. It streamlines
+the process of tracking products and eliminates the need for manual recording.
+
+## create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
