@@ -1,12 +1,15 @@
+<!-- Script -->
 <script>
 	import { supabase } from '$lib/supabase';
 	import { AppBar } from '@skeletonlabs/skeleton';
-	import { onMount } from 'svelte';	
+	import { onMount } from 'svelte';
 
 	let productName = '';
 	let productType = '';
 	let dateSupplied = '';
 	let farmerName = localStorage.getItem('name');
+
+	let msg = '';
 
 	/**
 	 * @type {any[] | null}
@@ -19,31 +22,40 @@
 		if (error) {
 			console.log(error);
 		} else {
-			console.log('test');
-			console.log(Products);
-			products = Products
-	}})
+			// - Debugging -
+			// console.log('test');
+			// console.log(Products);
+			products = Products;
+		}
+	});
 
+	// Product creation
 	async function addProduct() {
-		
-		await supabase.from('products').insert([
-				// @ts-ignore
-				{ productId: (products.length + 1).toString(), 
-				productName: productName, 
-				productType: productType, 
-				dateSupplied: dateSupplied, 
-				farmerName: farmerName }
+		if (productName === '' || productType === '' || dateSupplied === '') {
+			msg = 'All info is required';
+		} else {
+			await supabase.from('products').insert([
+				{
+					// @ts-ignore
+					productId: (products.length + 1).toString(),
+					productName: productName,
+					productType: productType,
+					dateSupplied: dateSupplied,
+					farmerName: farmerName
+				}
 			]);
- 
-		// Reset form inputs
-		productName = '';
-		productType = '';
-		dateSupplied = '';
 
-		alert('Product added successfully!');
+			// Reset form inputs
+			productName = '';
+			productType = '';
+			dateSupplied = '';
+
+			msg = 'Product added successfully!';
+		}
 	}
 </script>
 
+<!-- HTML -->
 <AppBar>
 	<svelte:fragment slot="trail">
 		<li><a href="/farmer">Home</a></li>
@@ -69,11 +81,11 @@
 				<input class="input" type="date" id="dateSupplied" bind:value={dateSupplied} />
 			</form>
 		</div>
-
 		<div>
-			<button type="button" class="btn variant-filled" on:click={addProduct}>
-				Add Product
-			</button>
+			{msg}
+		</div>
+		<div>
+			<button type="button" class="btn variant-filled" on:click={addProduct}> Add Product </button>
 		</div>
 	</div>
 </div>
