@@ -1,37 +1,37 @@
 # Farm Central Stock Management Website
 Farm Central Stock Management Website is a powerful platform designed to streamline the management of farmers and their associated products. It eliminates the need for manual recording and simplifies the process of tracking products. With Farm Central, you can efficiently manage your farm's inventory and improve productivity.
 
-##Usage
+## Usage
 To access the Farm Central Stock Management Website, simply click on the following link: Farm Central Website
 
 Please note that registration is not available on the app. Instead, login details are provided for both employees and farmers.
 
-###Employee Login:
+### Employee Login:
 Email: james@example.com
 Password: mypassword
-###Farmer Login:
+### Farmer Login:
 Email: william@example.com
 Password: anotherpassword
 #Features
 The Farm Central Stock Management Website offers the following key features:
 
-###User Authentication:
+### User Authentication:
 
 Login as either an employee or a farmer with the provided credentials.
 Secure access ensures that only authorized individuals can log in.
-###User Profile:
+### User Profile:
 
 Both employees and farmers can view their details after logging in.
 Accessible profile information provides a personalized experience.
-###Employee Functionality:
+### Employee Functionality:
 
 Employees can create new farmers, enabling efficient management of farmer records.
 Simplified farmer creation process improves workflow and organization.
-###Product History:
+### Product History:
 
 Employees can view a comprehensive history of all products.
 Access to product records allows for effective monitoring and analysis.
-###Farmer Functionality:
+### Farmer Functionality:
 
 Farmers can create new products, streamlining the process of adding inventory.
 Efficient product creation empowers farmers to manage their stock effectively.
