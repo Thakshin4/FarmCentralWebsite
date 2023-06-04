@@ -1,3 +1,4 @@
+<!-- Script -->
 <script>
 	import { supabase } from '$lib/supabase';
 	import { AppBar } from '@skeletonlabs/skeleton';
@@ -6,6 +7,8 @@
 	let email = '';
 	let password = '';
 	let name = '';
+
+	let msg = '';
 
 	/**
 	 * @type {any[] | null}
@@ -18,20 +21,21 @@
 		if (error) {
 			console.log(error);
 		} else {
-			console.log('test');
-			console.log(Users);
 			users = Users;
-			console.log(users)
+			// - Debugging -
+			// console.log('test');
+			// console.log(Users);
+			// console.log(users)
 		}
 	});
 
+	// Farer creation
 	async function addFarmer() {
-
 		// @ts-ignore
 		const existingUser = users.find((user) => user.email === email);
 
 		if (existingUser) {
-			alert('Email already exists. Please choose a different email.');
+			msg = 'Email already exists. Please choose a different email.';
 		} else {
 			await supabase.from('users').insert([
 				// @ts-ignore
@@ -44,15 +48,12 @@
 					role: 'Farmer'
 				}
 			]);
-			alert('New Farmer Added.');
+			msg = 'New Farmer Added.';
 		}
-
-		// Reset form inputs
-
-		alert('Farmer added successfully!');
 	}
 </script>
 
+<!-- HTML -->
 <AppBar>
 	<svelte:fragment slot="trail"
 		><li><a href="/employee">Home</a></li>
@@ -79,7 +80,9 @@
 				<input class="input" type="text" id="name" bind:value={name} />
 			</form>
 		</div>
-
+		<div>
+			{msg}
+		</div>
 		<div>
 			<button type="button" class="btn variant-filled" on:click={addFarmer}>Submit</button>
 		</div>
