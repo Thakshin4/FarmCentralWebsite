@@ -4,41 +4,25 @@ Farm Central is a software tool or platform designed to facilitate
 the management of Farmers and their associated products. It streamlines
 the process of tracking products and eliminates the need for manual recording.
 
-## create-svelte
+## Svelte
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Majority of the app was programmed in Svelte
 
-## Creating a project
+## SvelteKit
 
-If you're seeing this, you've probably already done this step. Congrats!
+### fast
+Powered by Svelte and Vite, speed is baked into every crevice: fast setup, fast dev, fast builds, fast page loads, fast navigation. Did we mention it's fast?
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+### fun
+No more wasted days figuring out bundler configuration, routing, SSR, CSP, TypeScript, deployment settings and all the other boring stuff. Code with joy.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### flexible
+SPA? MPA? SSR? SSG? Check. SvelteKit gives you the tools to succeed whatever it is you're building. And it runs wherever JavaScript does.
 
-## Developing
+## Skeleton UI
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+## Supabase
 
-```bash
-npm run dev
+## Vercel
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
