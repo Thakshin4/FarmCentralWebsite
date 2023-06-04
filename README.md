@@ -13,14 +13,12 @@ You are not able to register on the app
 Instead Login details are provided
 
 ### Employee Login: 
-Email: james@example.com
-
-Password: mypassword
+- Email: james@example.com
+- Password: mypassword
 
 ### Farmer Login:
-Email: william@example.com
-
-Password: anotherpassword
+- Email: william@example.com
+- Password: anotherpassword
 
 The website has the following functionality:
 - Login as either Employee or Farmer
