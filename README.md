@@ -1,40 +1,43 @@
 # Farm Central Stock Management Website
+
 Farm Central Stock Management Website is a powerful platform designed to streamline the management of farmers and their associated products. It eliminates the need for manual recording and simplifies the process of tracking products. With Farm Central, you can efficiently manage your farm's inventory and improve productivity.
 
 ## Usage
-To access the Farm Central Stock Management Website, simply click on the following link: Farm Central Website
+To access the Farm Central Stock Management Website, simply click on the following link: [Farm Central Website](https://farm-central-website.vercel.app)
 
 Please note that registration is not available on the app. Instead, login details are provided for both employees and farmers.
 
 ### Employee Login:
-Email: james@example.com
-Password: mypassword
+- Email: james@example.com
+- Password: mypassword
+
 ### Farmer Login:
-Email: william@example.com
-Password: anotherpassword
-#Features
+- Email: william@example.com
+- Password: anotherpassword
+
+## Features
 The Farm Central Stock Management Website offers the following key features:
 
-### User Authentication:
+1. User Authentication:
+   - Login as either an employee or a farmer with the provided credentials.
+   - Secure access ensures that only authorized individuals can log in.
 
-Login as either an employee or a farmer with the provided credentials.
-Secure access ensures that only authorized individuals can log in.
-### User Profile:
+2. User Profile:
+   - Both employees and farmers can view their details after logging in.
+   - Accessible profile information provides a personalized experience.
 
-Both employees and farmers can view their details after logging in.
-Accessible profile information provides a personalized experience.
-### Employee Functionality:
+3. Employee Functionality:
+   - Employees can create new farmers, enabling efficient management of farmer records.
+   - Simplified farmer creation process improves workflow and organization.
 
-Employees can create new farmers, enabling efficient management of farmer records.
-Simplified farmer creation process improves workflow and organization.
-### Product History:
+4. Product History:
+   - Employees can view a comprehensive history of all products.
+   - Access to product records allows for effective monitoring and analysis.
 
-Employees can view a comprehensive history of all products.
-Access to product records allows for effective monitoring and analysis.
-### Farmer Functionality:
+5. Farmer Functionality:
+   - Farmers can create new products, streamlining the process of adding inventory.
+   - Efficient product creation empowers farmers to manage their stock effectively.
 
-Farmers can create new products, streamlining the process of adding inventory.
-Efficient product creation empowers farmers to manage their stock effectively.
 We hope you find the Farm Central Stock Management Website useful in optimizing your farm operations and increasing productivity. If you have any questions or need assistance, please feel free to reach out to our support team.
 
 Happy farming!
