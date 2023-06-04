@@ -1,43 +1,56 @@
 # Farm Central Stock Management Website
+Farm Central Stock Management Website is a powerful platform designed to streamline the management of farmers and their associated products. It eliminates the need for manual recording and simplifies the process of tracking products. With Farm Central, you can efficiently manage your farm's inventory and improve productivity.
 
-Farm Central is a software tool or platform designed to facilitate
-the management of Farmers and their associated products. It streamlines
-the process of tracking products and eliminates the need for manual recording.
+##Usage
+To access the Farm Central Stock Management Website, simply click on the following link: Farm Central Website
 
-## Usage
-The website is accessible with this link:
-https://farm-central-website.vercel.app
+Please note that registration is not available on the app. Instead, login details are provided for both employees and farmers.
 
-You are not able to register on the app
+###Employee Login:
+Email: james@example.com
+Password: mypassword
+###Farmer Login:
+Email: william@example.com
+Password: anotherpassword
+#Features
+The Farm Central Stock Management Website offers the following key features:
 
-Instead Login details are provided
+###User Authentication:
 
-### Employee Login: 
-- Email: james@example.com
-- Password: mypassword
+Login as either an employee or a farmer with the provided credentials.
+Secure access ensures that only authorized individuals can log in.
+###User Profile:
 
-### Farmer Login:
-- Email: william@example.com
-- Password: anotherpassword
+Both employees and farmers can view their details after logging in.
+Accessible profile information provides a personalized experience.
+###Employee Functionality:
 
-The website has the following functionality:
-- Login as either Employee or Farmer
-- Both types of users are able to view their Details
-- Employees are able to create new Farmers
-- Employees are able to view a history of all Products
-- Farmers are able to create new Products
+Employees can create new farmers, enabling efficient management of farmer records.
+Simplified farmer creation process improves workflow and organization.
+###Product History:
 
-## Svelte - Language
+Employees can view a comprehensive history of all products.
+Access to product records allows for effective monitoring and analysis.
+###Farmer Functionality:
+
+Farmers can create new products, streamlining the process of adding inventory.
+Efficient product creation empowers farmers to manage their stock effectively.
+We hope you find the Farm Central Stock Management Website useful in optimizing your farm operations and increasing productivity. If you have any questions or need assistance, please feel free to reach out to our support team.
+
+Happy farming!
+
+## Credits
+### Svelte - Language
 https://svelte.dev
 
 Svelte is a radical new approach to building user interfaces. Whereas traditional frameworks like React and Vue do the bulk of their work in the browser, Svelte shifts that work into a compile step that happens when you build your app.
 
-## SvelteKit - Framework
+### SvelteKit - Framework
 https://kit.svelte.dev
 
 SvelteKit is built on Svelte, a UI framework that uses a compiler to let you write breathtakingly concise components that do minimal work in the browser, using languages you already know — HTML, CSS and JavaScript. It's a love letter to web development.
 
-## Skeleton UI - UI Toolkit
+### Skeleton UI - UI Toolkit
 https://www.skeleton.dev
 
 The UI toolkit for Svelte and Tailwind.
