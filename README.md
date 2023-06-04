@@ -3,11 +3,10 @@
 Farm Central Stock Management Website is a powerful platform designed to streamline the management of farmers and their associated products. It eliminates the need for manual recording and simplifies the process of tracking products. With Farm Central, you can efficiently manage your farm's inventory and improve productivity.
 
 ## Table of Contents
-- [Farm Central Stock Management Website](#farm-central-stock-management-website)
-  - [Usage](#usage)
-    - [Employee Login](#employee-login)
-    - [Farmer Login](#farmer-login)
-  - [Features](#features)
+- [Usage](#usage)
+  - [Employee Login](#employee-login)
+  - [Farmer Login](#farmer-login)
+- [Features](#features)
 - [Tables](#tables)
   - [users](#users)
   - [products](#products)
