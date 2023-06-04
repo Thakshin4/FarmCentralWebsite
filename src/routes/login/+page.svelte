@@ -37,7 +37,7 @@
 			localStorage.setItem('name', user.name);
 			localStorage.setItem('role', user.role);
 			localStorage.setItem('email', user.email);
-			alert(user.name);
+
 			// Redirect to the appropriate route based on user role
 			if (user.role === 'Employee') {
 				goto('/employee');
