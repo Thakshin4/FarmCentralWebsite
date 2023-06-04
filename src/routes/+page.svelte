@@ -1,3 +1,4 @@
+<!-- Script -->
 <script>
 	import { goto } from '$app/navigation';
 
@@ -6,6 +7,7 @@
 	}
 </script>
 
+<!-- HTML -->
 <div class="container h-full mx-auto flex justify-center items-center">
 	<div class="space-y-5">
 		<h1 class="h1">Welcome to Farm Central!</h1>

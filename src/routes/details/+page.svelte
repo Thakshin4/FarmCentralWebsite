@@ -1,15 +1,19 @@
+<!-- Script -->
 <script>
 	import { supabase } from '$lib/supabase';
 	import { AppBar } from '@skeletonlabs/skeleton';
 	import { onMount } from 'svelte';
 
+	// Gets details from local storage
 	let email = localStorage.getItem('email');
 	let role = localStorage.getItem('role');
 	let name = localStorage.getItem('name');
 </script>
 
+<!-- HTML -->
 <AppBar>
 	<svelte:fragment slot="trail">
+		<!-- Nav links depend on user role -->
 		{#if role == 'Employee'}
 			<li><a href="/employee">Home</a></li>
 			<li><a href="/view-details">View Details</a></li>
@@ -32,13 +36,13 @@
 		<h1 class="h1">Details</h1>
 		<section class="p-4">
 			<div class="card p-4">
-					<ul>
-						<p>Email: {email}</p>
-						<br />
-						<p>Name: {name}</p>
-						<br />
-						<p>Role: {role}</p>
-					</ul>
+				<ul>
+					<p>Email: {email}</p>
+					<br />
+					<p>Name: {name}</p>
+					<br />
+					<p>Role: {role}</p>
+				</ul>
 			</div>
 		</section>
 	</div>

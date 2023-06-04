@@ -1,7 +1,9 @@
+<!-- Script -->
 <script>
 	import { AppBar } from '@skeletonlabs/skeleton';
 </script>
 
+<!-- HTML -->
 <AppBar>
 	<svelte:fragment slot="trail"
 		><li><a href="/employee">Home</a></li>
@@ -17,7 +19,7 @@
 		<h1 class="h1">Employee Page</h1>
 
 		<div class="card p-4">
-			Welcome to the Employee Page.<br>
+			Welcome to the Employee Page.<br />
 			Here you can:
 			<li>Add new Farmers</li>
 			<li>View a history of all products</li>

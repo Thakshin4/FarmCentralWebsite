@@ -1,3 +1,4 @@
+<!-- Script -->
 <script lang="ts">
 	// The ordering of these imports is critical to your app working properly
 	import '../theme.postcss';
@@ -9,6 +10,7 @@
 	import Logo from '$lib/Images/logo.png';
 </script>
 
+<!-- HTML -->
 <AppShell>
 	<!-- Page Header -->
 	<svelte:fragment slot="header">
