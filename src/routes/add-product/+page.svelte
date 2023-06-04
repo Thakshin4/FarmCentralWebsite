@@ -1,0 +1,79 @@
+<script>
+	import { supabase } from '$lib/supabase';
+	import { AppBar } from '@skeletonlabs/skeleton';
+	import { onMount } from 'svelte';	
+
+	let productName = '';
+	let productType = '';
+	let dateSupplied = '';
+	let farmerName = localStorage.getItem('name');
+
+	/**
+	 * @type {any[] | null}
+	 */
+	let products = [];
+
+	onMount(async () => {
+		// @ts-ignore
+		let { data: Products, error } = await supabase.from('products').select('*');
+		if (error) {
+			console.log(error);
+		} else {
+			console.log('test');
+			console.log(Products);
+			products = Products
+	}})
+
+	async function addProduct() {
+		
+		await supabase.from('products').insert([
+				// @ts-ignore
+				{ productId: (products.length + 1).toString(), 
+				productName: productName, 
+				productType: productType, 
+				dateSupplied: dateSupplied, 
+				farmerName: farmerName }
+			]);
+ 
+		// Reset form inputs
+		productName = '';
+		productType = '';
+		dateSupplied = '';
+
+		alert('Product added successfully!');
+	}
+</script>
+
+<AppBar>
+	<svelte:fragment slot="trail">
+		<li><a href="/farmer">Home</a></li>
+		<li><a href="/details">View Details</a></li>
+		<li><a href="/add-product">Add Product</a></li>
+		<li><a href="/login">Logout</a></li>
+	</svelte:fragment>
+</AppBar>
+
+<div class="container h-full mx-auto flex justify-center items-center">
+	<div class="space-y-5">
+		<h1 class="h1">Add Product</h1>
+
+		<div class="card p-4">
+			<form on:submit|preventDefault={addProduct}>
+				<label for="productName">Product Name:</label><br />
+				<input class="input" type="text" id="productName" bind:value={productName} /><br /><br />
+
+				<label for="productType">Product Type:</label><br />
+				<input class="input" type="text" id="productType" bind:value={productType} /><br /><br />
+
+				<label for="dateSupplied">Date Supplied:</label><br />
+				<input class="input" type="date" id="dateSupplied" bind:value={dateSupplied} />
+			</form>
+		</div>
+
+		<div>
+			<button type="button" class="btn variant-filled" on:click={addProduct}>
+				Add Product
+			</button>
+		</div>
+	</div>
+</div>
