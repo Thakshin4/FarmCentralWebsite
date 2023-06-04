@@ -1,4 +1,4 @@
-# Farm Central Stock management Website
+# Farm Central Stock Management Website
 
 Farm Central is a software tool or platform designed to facilitate
 the management of Farmers and their associated products. It streamlines
