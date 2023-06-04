@@ -4,6 +4,28 @@ Farm Central is a software tool or platform designed to facilitate
 the management of Farmers and their associated products. It streamlines
 the process of tracking products and eliminates the need for manual recording.
 
+## Usage
+The website is accessible with this link:
+https://farm-central-website.vercel.app
+
+You are not able to register on the app
+Instead Login details are provided
+
+### Employee Login: 
+Email: james@example.com
+Password: mypassword
+
+### Farmer Login:
+Email: william@example.com
+Password: anotherpassword
+
+The website has the following functionality:
+- Login as either Employee or Farmer
+- Both types of users are able to view their Details
+- Employees are able to create new Farmers
+- Employees are able to view a history of all Products
+- Farmers are able to create new Products
+
 ## Svelte - Language
 https://svelte.dev
 
@@ -12,14 +34,7 @@ Svelte is a radical new approach to building user interfaces. Whereas traditiona
 ## SvelteKit - Framework
 https://kit.svelte.dev
 
-### fast
-Powered by Svelte and Vite, speed is baked into every crevice: fast setup, fast dev, fast builds, fast page loads, fast navigation. Did we mention it's fast?
-
-### fun
-No more wasted days figuring out bundler configuration, routing, SSR, CSP, TypeScript, deployment settings and all the other boring stuff. Code with joy.
-
-### flexible
-SPA? MPA? SSR? SSG? Check. SvelteKit gives you the tools to succeed whatever it is you're building. And it runs wherever JavaScript does.
+SvelteKit is built on Svelte, a UI framework that uses a compiler to let you write breathtakingly concise components that do minimal work in the browser, using languages you already know — HTML, CSS and JavaScript. It's a love letter to web development.
 
 ## Skeleton UI - UI Toolkit
 https://www.skeleton.dev
