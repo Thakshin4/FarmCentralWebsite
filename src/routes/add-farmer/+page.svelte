@@ -36,7 +36,7 @@
 
 		if (existingUser) {
 			msg = 'Email already exists. Please choose a different email.';
-		} else if (email === null || password === null || name === null) {
+		} else if (email === '' || password === '' || name === '') {
 			msg = 'All info is required';
 		} else {
 			await supabase.from('users').insert([
