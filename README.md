@@ -42,6 +42,25 @@ We hope you find the Farm Central Stock Management Website useful in optimizing 
 
 Happy farming!
 
+## Tables
+
+### users
+| userId | email                  | password        | name      | role    |
+|--------|------------------------|-----------------|-----------|---------|
+| 2      | william@example.com    | anotherpassword | William M | Farmer  |
+| 1      | james@example.com      | mypassword      | James M   | Employee|
+| 3      | louis@example.com      | apassword       | Louis M   | Farmer  |
+
+### products
+| productId | productName | productType | dateSupplied | farmerName |
+|-----------|-------------|-------------|--------------|------------|
+| 1         | Strawberry  | Fruit       | 2023-06-03   | William M  |
+| 2         | Watermelon  | Fruit       | 2023-06-29   | William M  |
+| 3         | Tomato      | Fruit       | 2023-06-02   | William M  |
+| 4         | Onion       | Vegetable   | 2023-06-09   | William M  |
+| 5         | Carrots     | Vegetable   | 2023-06-14   | William M  |
+| 6         | Potatoes    | Vegetable   | 2023-06-06   | William M  |
+
 ## Credits
 ### Svelte - Language
 https://svelte.dev
@@ -59,12 +78,12 @@ https://www.skeleton.dev
 The UI toolkit for Svelte and Tailwind.
 Skeleton allows you to create adaptive and accessible interfaces for web apps of any shape or size.
 
-## Supabase - Database
+### Supabase - Database
 https://app.supabase.com
 
 Supabase is an open source Firebase alternative for building secure and performant Postgres backends with minimal configuration.
 
-## Vercel - Website Hosting
+### Vercel - Website Hosting
 https://vercel.com
 
 Vercel is the platform for frontend developers, providing the speed and reliability innovators need to create at the moment of inspiration.
