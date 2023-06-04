@@ -47,8 +47,8 @@ Happy farming!
 ### users
 | userId | email                  | password        | name      | role    |
 |--------|------------------------|-----------------|-----------|---------|
-| 2      | william@example.com    | anotherpassword | William M | Farmer  |
 | 1      | james@example.com      | mypassword      | James M   | Employee|
+| 2      | william@example.com    | anotherpassword | William M | Farmer  |
 | 3      | louis@example.com      | apassword       | Louis M   | Farmer  |
 
 ### products
