@@ -10,6 +10,8 @@
 
 	let msg = '';
 
+	const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 	/**
 	 * @type {any[] | null}
 	 */
@@ -34,11 +36,22 @@
 		// @ts-ignore
 		const existingUser = users.find((user) => user.email === email);
 
-		if (existingUser) {
+		// Farmer Validation
+		if (existingUser) 
+		{
 			msg = 'Email already exists. Please choose a different email.';
-		} else if (email === '' || password === '' || name === '') {
+		} 
+		else if (email === '' || password === '' || name === '') 
+		{
 			msg = 'All info is required';
-		} else {
+		} 
+		else if (!emailRegex.test(email)) 
+		{
+			msg = 'Please enter a valid email address.';
+		} 
+		else 
+		{
+			// Writes new Farmer
 			await supabase.from('users').insert([
 				// @ts-ignore
 				{
@@ -70,6 +83,7 @@
 	<div class="space-y-5">
 		<h1 class="h1">Add Farmer</h1>
 
+		<!-- Form for adding Farmer -->
 		<div class="card p-4">
 			<form on:submit|preventDefault={addFarmer}>
 				<label for="label">Email:</label><br />

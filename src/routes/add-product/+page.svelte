@@ -69,13 +69,22 @@
 	<div class="space-y-5">
 		<h1 class="h1">Add Product</h1>
 
+		<!-- Form for adding Product -->
 		<div class="card p-4">
 			<form on:submit|preventDefault={addProduct}>
 				<label for="productName">Product Name:</label><br />
 				<input class="input" type="text" id="productName" bind:value={productName} /><br /><br />
 
-				<label for="productType">Product Type:</label><br />
-				<input class="input" type="text" id="productType" bind:value={productType} /><br /><br />
+				<label class="label">
+					<span>Product Type:</span><br><br>
+					<select class="input" id="productType" bind:value={productType}>
+						<option value="1">Fruits</option>
+						<option value="2">Vegetables</option>
+						<option value="3">Grains</option>
+						<option value="3">Nuts</option>
+						<option value="3">Sugars & Straches</option>
+					</select>
+				</label><br>
 
 				<label for="dateSupplied">Date Supplied:</label><br />
 				<input class="input" type="date" id="dateSupplied" bind:value={dateSupplied} />
