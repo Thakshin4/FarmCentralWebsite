@@ -78,11 +78,11 @@
 				<label class="label">
 					<span>Product Type:</span><br><br>
 					<select class="input" id="productType" bind:value={productType}>
-						<option value="1">Fruits</option>
-						<option value="2">Vegetables</option>
-						<option value="3">Grains</option>
-						<option value="3">Nuts</option>
-						<option value="3">Sugars & Straches</option>
+						<option value="Fruits">Fruits</option>
+						<option value="Vegetables">Vegetables</option>
+						<option value="Grains">Grains</option>
+						<option value="Nuts">Nuts</option>
+						<option value="Sugars & Straches">Sugars & Straches</option>
 					</select>
 				</label><br>
 

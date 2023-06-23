@@ -55,6 +55,7 @@
 	<div class="space-y-5">
 		<h1 class="h1">Login</h1>
 
+		<!-- Form for Login -->
 		<div class="card p-4">
 			<section class="p-4">
 				<form on:submit|preventDefault={handleLogin}>

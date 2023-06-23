@@ -19,8 +19,6 @@
 			mapDistincts();
 		});
 
-
-
 	let filterType = '';
 	let filterDate = '';
 	let filterFarmer = '';
@@ -43,12 +41,14 @@
 		return [...new Set(array)];
 	}
 
+	// Finds distinct values from data
 	function mapDistincts() {
 		productTypes = distinct(products.map((product) => product.productType));
 		productDates = distinct(products.map((product) => product.dateSupplied));
 		productFarmers = distinct(products.map((product) => product.farmerName));
 	}
 
+	// Filter Logic
 	function handleFilter() {
 		filteredProducts = products.filter((product) => {
 			let typeMatch = true;
@@ -84,6 +84,7 @@
 	<div class="space-y-5">
 		<h1 class="h1">View Products</h1>
 
+		<!-- Filters -->
 		<div class="card p-4">			
 			<label for="filterType">Filter by Type:</label><br>
 			<select class="select" id="filterType" bind:value={filterType} on:change={handleFilter}>
@@ -110,6 +111,7 @@
 			</select>
 		</div>
 
+		<!-- Display Tables -->
 		<div class="table-container">
 			<table class="table table-hover">
 				<thead>
