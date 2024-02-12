@@ -57,7 +57,7 @@ The Farm Central Stock Management Website offers the following key features:
 
 We hope you find the Farm Central Stock Management Website useful in optimizing your farm operations and increasing productivity. If you have any questions or need assistance, please feel free to reach out to our support team.
 
-Happy farming!
+Happy farming! 🎃🧺
 
 ## Tables
 
